@@ -1,5 +1,6 @@
 
-/* turn.js 5-beta0.1 | Copyright (c) */
+/*
+/* turn.js 5-beta0.1 | Copyright (c) *//*
 var $jscomp=$jscomp||{};$jscomp.scope={};$jscomp.getGlobal=function(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var c=a[b];if(c&&c.Math==Math)return c}throw Error("Cannot find global object");};$jscomp.global=$jscomp.getGlobal(this);var TurnJS=function(a,b){b=void 0===b?"":b;this.jQueryObject=$(a);this.jQueryObject.turn(b);this.__setup__()};
 TurnJS.prototype.view=function(a){a=void 0===a?this.pages:a;return this.jQueryObject.turn("view",a).filter(function(b){return 0!=b})};
 TurnJS.prototype.__setup__=function(){this.pages={__parent__:this,add:function(a,b){b=void 0===b?this.pages+1:b;return this.__parent__.jQueryObject.turn("addPage",$(a),b)},remove:function(a){a=void 0===a?this.page:a;return this.__parent__.jQueryObject.turn("removePage",a)},get pages(){return this.__parent__.jQueryObject.turn("pages")},get size(){return this.__parent__.jQueryObject.turn("size")},set size(a){return this.__parent__.jQueryObject.turn("size",a.width,a.height)}};this.animation={__parent__:this,
@@ -11,7 +12,7 @@ set disabled(a){return this.__parent__.jQueryObject.turn("disable",a)},get direc
 get turnCorners(){return this.__parent__.jQueryObject.turn("options").turnCorners},set turnCorners(a){return this.__parent__.jQueryObject.turn("options",{turnCorners:a})}}};
 $jscomp.global.Object.defineProperties(TurnJS.prototype,{version:{configurable:!0,enumerable:!0,get:function(){return this.jQueryObject.turn("version")}},destroy:{configurable:!0,enumerable:!0,get:function(){this.jQueryObject.turn("destroy");this.jQueryObject=void 0}},page:{configurable:!0,enumerable:!0,get:function(){return this.jQueryObject.turn("page")},set:function(a){return this.jQueryObject.turn("page",a).turn("stop")}}});
 
-/* turn.js 4.1.2 | Copyright (c) 2012 Emmanuel Garcia - 2021 Raffaele Morganti | turnjs.com | turnjs.com/license.txt */
+/* turn.js 4.1.2 | Copyright (c) 2012 Emmanuel Garcia - 2021 Raffaele Morganti | turnjs.com | turnjs.com/license.txt *//*
 (function(m){function ha(a,b,c){if(c[0]&&"object"!=typeof c[0]){if(b[c[0]])return b[c[0]].apply(a,Array.prototype.slice.call(c,1));throw D(c[0]+" is not a method or property");}return b.init.apply(a,c)}function A(a,b,c,d){return{css:{position:"absolute",top:a,left:b,overflow:d||"hidden",zIndex:c||"auto"}}}function ia(a,b,c,d,e){var f=1-e,g=f*f*f,k=e*e*e;return q(Math.round(g*a.x+3*e*f*f*b.x+3*e*e*f*c.x+k*d.x),Math.round(g*a.y+3*e*f*f*b.y+3*e*e*f*c.y+k*d.y))}function q(a,b){return{x:a,y:b}}function M(a,
 b,c){return c?" translate3d("+a+"px,"+b+"px, 0px) ":" translate("+a+"px, "+b+"px) "}function N(a){return" rotate("+a+"deg) "}function z(a,b){return Object.prototype.hasOwnProperty.call(b,a)}function ba(a,b,c,d,e){var f=[];b={x:b.x/100*a.width(),y:b.y/100*a.height()};c={x:c.x/100*a.width(),y:c.y/100*a.height()};var g=c.x-b.x,k=c.y-b.y,n=Math.atan2(k,g),t=n-Math.PI/2;t=Math.abs(a.width()*Math.sin(t))+Math.abs(a.height()*Math.cos(t));g=Math.sqrt(k*k+g*g);c=q(c.x<b.x?a.width():0,c.y<b.y?a.height():0);
 var u=Math.tan(n);k=-1/u;u=(k*c.x-c.y-u*b.x+b.y)/(k-u);c=Math.sqrt(Math.pow(u-b.x,2)+Math.pow(k*u-k*c.x+c.y-b.y,2));for(b=0;b<e;b++)f.push(" "+d[b][1]+" "+100*(c+g*d[b][0])/t+"%");a.css({"background-image":"-webkit-linear-gradient("+-n+"rad,"+f.join(",")+")"})}function T(a,b,c){a=m.Event(a);b.trigger(a,c);return a.isDefaultPrevented()?"prevented":a.isPropagationStopped()?"stopped":""}function D(a){function b(c){this.name="TurnJsError";this.message=c}b.prototype=Error();b.prototype.constructor=b;return new b(a)}
@@ -73,4 +74,31 @@ _eventStart:function(a){var b=this.data().f,c=b.opts.turn;if(!b.corner&&!b.disab
 c.top;l._showFoldedPage.call(this,b.corner)}else if(b.hover&&!this.data().effect&&this.is(":visible"))if(a=l._isIArea.call(this,a[0])){if("sheet"==b.effect&&2==a.corner.length||"hard"==b.effect)b.status="hover",b=l._c.call(this,a.corner,b.opts.cornerSize/2),a.x=b.x,a.y=b.y,l._showFoldedPage.call(this,a,!0)}else"hover"==b.status&&(b.status="",l.hideFoldedPage.call(this,!0))},_eventEnd:function(){var a=this.data().f,b=a.corner;!a.disabled&&b&&"prevented"!=T("released",this,[a.point||b])&&l.hideFoldedPage.call(this,
 !0);a.corner=null},disable:function(a){l.setData.call(this,{disabled:a});return this},hover:function(a){l.setData.call(this,{hover:a});return this},peel:function(a,b){var c=this.data().f;if(a){if(-1==E.all.indexOf(a))throw D("Corner "+a+" is not permitted");if(-1!=l._cAllowed.call(this).indexOf(a)){var d=l._c.call(this,a,c.opts.cornerSize/2);c.status="peel";l._showFoldedPage.call(this,{corner:a,x:d.x,y:d.y},b)}}else c.status="",l.hideFoldedPage.call(this,b);return this}};m.extend(m.fn,{flip:function(){return ha(m(this[0]),
 l,arguments)},turn:function(){return ha(m(this[0]),h,arguments)},transform:function(a,b){var c={};b&&(c["transform-origin"]=b);c.transform=a;return this.css(c)},animatef:function(a){var b=this.data();b.effect&&b.effect.stop();if(a){a.to.length||(a.to=[a.to]);a.from.length||(a.from=[a.from]);for(var c=[],d=a.to.length,e=!0,f=this,g=(new Date).getTime(),k=function(){if(b.effect&&e){for(var t=[],u=Math.min(a.duration,(new Date).getTime()-g),x=0;x<d;x++)t.push(b.effect.easing(1,u,a.from[x],c[x],a.duration));
-a.frame(1==d?t[0]:t);u==a.duration?(delete b.effect,f.data(b),a.complete&&a.complete()):window.requestAnimationFrame(k)}},n=0;n<d;n++)c.push(a.to[n]-a.from[n]);b.effect=m.extend({stop:function(){e=!1},easing:function(t,u,x,U,P){return U*Math.sqrt(1-(u=u/P-1)*u)+x}},a);this.data(b);k()}else delete b.effect}});m.isTouch=O;m.mouseEvents=K;m.findPos=ca})(jQuery);
+a.frame(1==d?t[0]:t);u==a.duration?(delete b.effect,f.data(b),a.complete&&a.complete()):window.requestAnimationFrame(k)}},n=0;n<d;n++)c.push(a.to[n]-a.from[n]);b.effect=m.extend({stop:function(){e=!1},easing:function(t,u,x,U,P){return U*Math.sqrt(1-(u=u/P-1)*u)+x}},a);this.data(b);k()}else delete b.effect}});m.isTouch=O;m.mouseEvents=K;m.findPos=ca})(jQuery);*/
+
+
+var currentPage = 0;
+
+$('.book')
+.on('click', '.active', nextPage)
+.on('click', '.flipped', prevPage);
+
+$('.book').on("swipeleft", nextPage);
+$('.book').on("swiperight", prevPage);
+
+function prevPage() {
+  $('.flipped')
+    .last()
+    .removeClass('flipped')
+    .addClass('active')
+    .siblings('.page')
+    .removeClass('active');
+}
+function nextPage() {
+  $('.active')
+    .removeClass('active')
+    .addClass('flipped')
+    .next('.page')
+    .addClass('active')
+    .siblings();
+}
