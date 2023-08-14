@@ -1220,3 +1220,485 @@
     margin-top: 1rem;
     font-size: 0.5rem;
   }
+
+
+  @keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #191d9a;
+    overflow: hidden;
+}
+
+.background span {
+    width: 50vmin;
+    height: 50vmin;
+    border-radius: 50vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 50;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: #2e33cc;
+    top: 87%;
+    left: 25%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -24vw 8vh;
+    box-shadow: -100vmin 0 13.495584287864693vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: #1b1f93;
+    top: 84%;
+    left: 18%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 22vw 21vh;
+    box-shadow: -100vmin 0 13.396640883869647vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: #2e33cc;
+    top: 39%;
+    left: 78%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -1vw -22vh;
+    box-shadow: -100vmin 0 13.364544234930673vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: #1721ab;
+    top: 21%;
+    left: 79%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 14vw -6vh;
+    box-shadow: -100vmin 0 13.232874408632368vmin currentColor;
+}
+.background span:nth-child(4) {
+    color: #1721ab;
+    top: 100%;
+    left: 48%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -5vw -24vh;
+    box-shadow: 100vmin 0 12.971423163957516vmin currentColor;
+}
+.background span:nth-child(5) {
+    color: #1721ab;
+    top: 99%;
+    left: 72%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 25vw 13vh;
+    box-shadow: 100vmin 0 12.822316698723357vmin currentColor;
+}
+.background span:nth-child(6) {
+    color: #1b1f93;
+    top: 8%;
+    left: 31%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 12vw 25vh;
+    box-shadow: -100vmin 0 12.525771052992532vmin currentColor;
+}
+.background span:nth-child(7) {
+    color: #1721ab;
+    top: 87%;
+    left: 66%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -5vw 4vh;
+    box-shadow: 100vmin 0 13.318063155679418vmin currentColor;
+}
+.background span:nth-child(8) {
+    color: #1721ab;
+    top: 85%;
+    left: 30%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 25vw 14vh;
+    box-shadow: -100vmin 0 13.334736457380497vmin currentColor;
+}
+.background span:nth-child(9) {
+    color: #1721ab;
+    top: 12%;
+    left: 26%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 9vw 17vh;
+    box-shadow: -100vmin 0 13.281395043619181vmin currentColor;
+}
+.background span:nth-child(10) {
+    color: #2e33cc;
+    top: 26%;
+    left: 58%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 9vw -15vh;
+    box-shadow: 100vmin 0 12.859830231318972vmin currentColor;
+}
+.background span:nth-child(11) {
+    color: #1721ab;
+    top: 72%;
+    left: 16%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 0vw -2vh;
+    box-shadow: 100vmin 0 12.856196681544663vmin currentColor;
+}
+.background span:nth-child(12) {
+    color: #1b1f93;
+    top: 53%;
+    left: 67%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 6vw 16vh;
+    box-shadow: -100vmin 0 12.645378399766118vmin currentColor;
+}
+.background span:nth-child(13) {
+    color: #1721ab;
+    top: 93%;
+    left: 94%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 0vw -1vh;
+    box-shadow: 100vmin 0 12.57933634012704vmin currentColor;
+}
+.background span:nth-child(14) {
+    color: #2e33cc;
+    top: 71%;
+    left: 83%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 16vw -4vh;
+    box-shadow: 100vmin 0 12.827425951549785vmin currentColor;
+}
+.background span:nth-child(15) {
+    color: #1721ab;
+    top: 69%;
+    left: 38%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -3vw 11vh;
+    box-shadow: 100vmin 0 12.705964556781193vmin currentColor;
+}
+.background span:nth-child(16) {
+    color: #1721ab;
+    top: 83%;
+    left: 34%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 19vw -8vh;
+    box-shadow: 100vmin 0 12.92100654242721vmin currentColor;
+}
+.background span:nth-child(17) {
+    color: #1721ab;
+    top: 96%;
+    left: 100%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -5vw -9vh;
+    box-shadow: 100vmin 0 12.858563119264346vmin currentColor;
+}
+.background span:nth-child(18) {
+    color: #2e33cc;
+    top: 99%;
+    left: 55%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 14vw -7vh;
+    box-shadow: 100vmin 0 12.621848764970967vmin currentColor;
+}
+.background span:nth-child(19) {
+    color: #2e33cc;
+    top: 50%;
+    left: 67%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -2vw 17vh;
+    box-shadow: 100vmin 0 12.905109855147748vmin currentColor;
+}
+.background span:nth-child(20) {
+    color: #2e33cc;
+    top: 79%;
+    left: 88%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 16vw -3vh;
+    box-shadow: -100vmin 0 13.11283822634185vmin currentColor;
+}
+.background span:nth-child(21) {
+    color: #2e33cc;
+    top: 94%;
+    left: 90%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -17vw 5vh;
+    box-shadow: 100vmin 0 13.437381185677697vmin currentColor;
+}
+.background span:nth-child(22) {
+    color: #1721ab;
+    top: 15%;
+    left: 86%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -5vw -4vh;
+    box-shadow: -100vmin 0 12.58220709631565vmin currentColor;
+}
+.background span:nth-child(23) {
+    color: #2e33cc;
+    top: 43%;
+    left: 64%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 3vw -1vh;
+    box-shadow: 100vmin 0 13.062994287725811vmin currentColor;
+}
+.background span:nth-child(24) {
+    color: #1721ab;
+    top: 62%;
+    left: 9%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 17vw -4vh;
+    box-shadow: 100vmin 0 12.524019805212491vmin currentColor;
+}
+.background span:nth-child(25) {
+    color: #1b1f93;
+    top: 70%;
+    left: 67%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 17vw 5vh;
+    box-shadow: -100vmin 0 13.466886724715323vmin currentColor;
+}
+.background span:nth-child(26) {
+    color: #1b1f93;
+    top: 27%;
+    left: 16%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 13vw 20vh;
+    box-shadow: 100vmin 0 13.4726758772522vmin currentColor;
+}
+.background span:nth-child(27) {
+    color: #1721ab;
+    top: 72%;
+    left: 14%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 10vw -17vh;
+    box-shadow: 100vmin 0 12.58910781203511vmin currentColor;
+}
+.background span:nth-child(28) {
+    color: #2e33cc;
+    top: 97%;
+    left: 2%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 24vw 3vh;
+    box-shadow: -100vmin 0 13.287048785597314vmin currentColor;
+}
+.background span:nth-child(29) {
+    color: #1b1f93;
+    top: 59%;
+    left: 1%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -20vw -15vh;
+    box-shadow: -100vmin 0 13.461955285491253vmin currentColor;
+}
+.background span:nth-child(30) {
+    color: #1721ab;
+    top: 33%;
+    left: 52%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 7vw 22vh;
+    box-shadow: 100vmin 0 13.016591764722175vmin currentColor;
+}
+.background span:nth-child(31) {
+    color: #1721ab;
+    top: 28%;
+    left: 91%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -21vw 4vh;
+    box-shadow: 100vmin 0 12.831391791463542vmin currentColor;
+}
+.background span:nth-child(32) {
+    color: #1721ab;
+    top: 55%;
+    left: 21%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 12vw 7vh;
+    box-shadow: -100vmin 0 13.309800734729718vmin currentColor;
+}
+.background span:nth-child(33) {
+    color: #2e33cc;
+    top: 53%;
+    left: 6%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -22vw 2vh;
+    box-shadow: -100vmin 0 13.410045909610957vmin currentColor;
+}
+.background span:nth-child(34) {
+    color: #1b1f93;
+    top: 45%;
+    left: 57%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 1vw 22vh;
+    box-shadow: -100vmin 0 12.818488028688835vmin currentColor;
+}
+.background span:nth-child(35) {
+    color: #1721ab;
+    top: 93%;
+    left: 10%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -18vw -2vh;
+    box-shadow: 100vmin 0 12.952265756097898vmin currentColor;
+}
+.background span:nth-child(36) {
+    color: #1721ab;
+    top: 86%;
+    left: 77%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -10vw -18vh;
+    box-shadow: -100vmin 0 12.84677507895356vmin currentColor;
+}
+.background span:nth-child(37) {
+    color: #1721ab;
+    top: 41%;
+    left: 82%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -20vw -15vh;
+    box-shadow: -100vmin 0 13.12177988594209vmin currentColor;
+}
+.background span:nth-child(38) {
+    color: #1b1f93;
+    top: 45%;
+    left: 38%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -6vw 1vh;
+    box-shadow: 100vmin 0 13.287224193408889vmin currentColor;
+}
+.background span:nth-child(39) {
+    color: #1b1f93;
+    top: 59%;
+    left: 88%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -4vw 2vh;
+    box-shadow: 100vmin 0 13.35510602038441vmin currentColor;
+}
+.background span:nth-child(40) {
+    color: #1721ab;
+    top: 66%;
+    left: 33%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -21vw 6vh;
+    box-shadow: -100vmin 0 12.570418668125434vmin currentColor;
+}
+.background span:nth-child(41) {
+    color: #1721ab;
+    top: 69%;
+    left: 47%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 4vw -5vh;
+    box-shadow: -100vmin 0 13.297967103143453vmin currentColor;
+}
+.background span:nth-child(42) {
+    color: #1b1f93;
+    top: 2%;
+    left: 92%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -14vw -7vh;
+    box-shadow: 100vmin 0 12.769485255468386vmin currentColor;
+}
+.background span:nth-child(43) {
+    color: #2e33cc;
+    top: 33%;
+    left: 6%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -8vw 23vh;
+    box-shadow: -100vmin 0 13.064542795088013vmin currentColor;
+}
+.background span:nth-child(44) {
+    color: #2e33cc;
+    top: 15%;
+    left: 79%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 14vw 15vh;
+    box-shadow: -100vmin 0 12.82467464971645vmin currentColor;
+}
+.background span:nth-child(45) {
+    color: #1b1f93;
+    top: 76%;
+    left: 74%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 22vw -23vh;
+    box-shadow: 100vmin 0 13.343916324428218vmin currentColor;
+}
+.background span:nth-child(46) {
+    color: #1721ab;
+    top: 68%;
+    left: 89%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -6vw 20vh;
+    box-shadow: -100vmin 0 12.905316456942536vmin currentColor;
+}
+.background span:nth-child(47) {
+    color: #1b1f93;
+    top: 37%;
+    left: 61%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -14vw 15vh;
+    box-shadow: -100vmin 0 12.764463630180366vmin currentColor;
+}
+.background span:nth-child(48) {
+    color: #2e33cc;
+    top: 18%;
+    left: 94%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: 6vw 16vh;
+    box-shadow: -100vmin 0 12.929374601776594vmin currentColor;
+}
+.background span:nth-child(49) {
+    color: #2e33cc;
+    top: 30%;
+    left: 94%;
+    animation-duration: 6s;
+    animation-delay: -1s;
+    transform-origin: -14vw 23vh;
+    box-shadow: -100vmin 0 13.081942596715816vmin currentColor;
+}
+  
